@@ -1,6 +1,6 @@
 # Week-2
 
-This week will be a continuation of week 2
+This week will be a continuation of week 1
 
 ## What to Read
 
