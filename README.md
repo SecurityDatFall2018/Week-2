@@ -47,6 +47,19 @@ useradd -m james
 passwd james
 ```
 
+You have to allow ssh-connection via password:
+
+Look in `/etc/ssh/sshd_config` for
+```
+# Global settings
+…
+PasswordAuthentication no
+…
+```
+Change to `yes`, then tell the sshd service to reload its configuration:
+```
+service ssh reload
+```
 To terminate all processes you might have started under the user johndoe:
 ```
 pkill -u johndoe
